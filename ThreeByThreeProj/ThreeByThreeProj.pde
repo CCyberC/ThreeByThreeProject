@@ -33,6 +33,20 @@ void setup()
   ptY8 = appHeight*; 
   ptX9 = appWidth*; 
   ptY9 = appHeight*;
+  ptX10 = appWidth*; 
+  ptY10 = appHeight*;
+  ptX11 = appWidth*; 
+  ptY11 = appHeight*;
+  ptX12 = appWidth*; 
+  ptY12 = appHeight*;
+  ptX13 = appWidth*; 
+  ptY13 = appHeight*;
+  ptX14 = appWidth*; 
+  ptY14 = appHeight*;
+  ptX15 = appWidth*; 
+  ptY15 = appHeight*;
+  ptX16 = appWidth*; 
+  ptY16 = appHeight*;
   //
 }//End setup
 //
