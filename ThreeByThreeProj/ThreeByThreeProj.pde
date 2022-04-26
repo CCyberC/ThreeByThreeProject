@@ -1,7 +1,9 @@
 //Global Variables
 color black=0, resetWhite=255; //Not nightMode (lots of blue)
 float rectWidth, rectHeight, ptDiameter;
-float ptX1, ptY1;
+float ptX1, ptY1, ptX2, ptY2, ptX3, ptY3;
+float ptX4, ptY4, ptX5, ptY5, ptX6, ptY6;
+float ptX7, ptY7, ptX8, ptY8, ptX9, ptY9;
 //
 void setup() 
 {
