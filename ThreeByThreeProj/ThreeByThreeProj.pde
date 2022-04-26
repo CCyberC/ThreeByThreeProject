@@ -17,6 +17,7 @@ void draw()
   rect(ptX6, ptY6, rectWidth, rectHeight);
   rect(ptX7, ptY7, rectWidth, rectHeight);
   rect(ptX8, ptY8, rectWidth, rectHeight);
+  rect(ptX9, ptY9, rectWidth, rectHeight);
   */
 }//End draw
 //
