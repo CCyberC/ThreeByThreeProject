@@ -16,6 +16,22 @@ void setup()
   ptDiameter = appWidth*1/50;
   ptX1 = appWidth*0;
   ptY1 = appHeight*0;
+  ptX2 = appWidth*; 
+  ptY2 = appHeight*0; 
+  ptX3 = appWidth*; 
+  ptY3 = appHeight*0;
+  ptX4 = appWidth*0; 
+  ptY4 = appHeight*; 
+  ptX5 = appWidth*; 
+  ptY5 = appHeight*; 
+  ptX6 = appWidth*; 
+  ptY6 = appHeight*;
+  ptX7 = appWidth*0; 
+  ptY7 = appHeight*; 
+  ptX8 = appWidth*; 
+  ptY8 = appHeight*; 
+  ptX9 = appWidth*; 
+  ptY9 = appHeight*;
   //
 }//End setup
 //
