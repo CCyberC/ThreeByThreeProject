@@ -32,6 +32,16 @@ void draw()
   */
   fill(black);
   ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
+  /*
+  ellipse(ptX2, ptY2, ptDiameter, ptDiameter);
+  ellipse(ptX3, ptY3, ptDiameter, ptDiameter);
+  ellipse(ptX4, ptY4, ptDiameter, ptDiameter);
+  ellipse(ptX5, ptY5, ptDiameter, ptDiameter);
+  ellipse(ptX6, ptY6, ptDiameter, ptDiameter);
+  ellipse(ptX7, ptY7, ptDiameter, ptDiameter);
+  ellipse(ptX8, ptY8, ptDiameter, ptDiameter);
+  ellipse(ptX9, ptY9, ptDiameter, ptDiameter);
+  */
   fill(resetWhite); //Best Practise
 }//End draw
 //
