@@ -1,5 +1,5 @@
 //Global Variables
-color black=0, resetWhite=255; //Not nightMode (lots of blue)
+color black=0, resetWhite=255, red=#F70000; //Not nightMode (lots of blue)
 float rectWidth, rectHeight, ptDiameter;
 float ptX1, ptY1, ptX2, ptY2, ptX3, ptY3, ptX4, ptY4;
 float ptX5, ptY5, ptX6, ptY6, ptX7, ptY7, ptX8, ptY8;
@@ -54,7 +54,6 @@ void draw()
 {
   //Rectangles must be 3x3, get done tonight*****
   rect(ptX1, ptY1, rectWidth, rectHeight);
-  /*
   rect(ptX2, ptY2, rectWidth, rectHeight);
   rect(ptX3, ptY3, rectWidth, rectHeight);
   rect(ptX4, ptY4, rectWidth, rectHeight);
@@ -69,11 +68,9 @@ void draw()
   rect(ptX13, ptY14, rectWidth, rectHeight);
   rect(ptX15, ptY15, rectWidth, rectHeight);
   rect(ptX16, ptY16, rectWidth, rectHeight);
-  */
   fill(black);
   //Starting points must be black : 1-9
   ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
-  /*
   ellipse(ptX2, ptY2, ptDiameter, ptDiameter);
   ellipse(ptX3, ptY3, ptDiameter, ptDiameter);
   ellipse(ptX4, ptY4, ptDiameter, ptDiameter);
@@ -89,12 +86,9 @@ void draw()
   ellipse(ptX14, ptY14, ptDiameter, ptDiameter);
   ellipse(ptX15, ptY15, ptDiameter, ptDiameter);
   ellipse(ptX16, ptY16, ptDiameter, ptDiameter);
-  */
   //
   //Other points must be red
-  //fill(red);
-  ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
-  /*
+  fill(red);
   ellipse(ptX4, ptY4, ptDiameter, ptDiameter);
   ellipse(ptX8, ptY8, ptDiameter, ptDiameter);
   ellipse(ptX12, ptY12, ptDiameter, ptDiameter);
@@ -103,7 +97,6 @@ void draw()
   ellipse(ptX15, ptY15, ptDiameter, ptDiameter);
   ellipse(ptX16, ptY16, ptDiameter, ptDiameter);
   fill(resetWhite); //Best Practise
-  */
   //
 }//End draw
 //
