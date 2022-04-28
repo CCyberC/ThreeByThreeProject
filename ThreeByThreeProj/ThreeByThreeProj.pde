@@ -144,8 +144,15 @@ void draw()
       fill(resetWhite);
     }
   }
-  //
   fill(red);
+
+  for (int i=4; i<13; i+=4) {
+    ellipse(ptX[i], ptY[i], ptDiameter, ptDiameter);
+  }
+  for (int i=13; i<ptX.length; i++) {
+    ellipse(ptX[i], ptY[i], ptDiameter, ptDiameter);
+  }
+  fill(resetWhite);
   //
   /*
   for (int i=1; i<4; i++) {
