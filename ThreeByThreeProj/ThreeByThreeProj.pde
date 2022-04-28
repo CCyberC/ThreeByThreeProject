@@ -57,6 +57,11 @@ void setup()
     ptY[i] = appHeight;
   }
   //
+  //Verifying Array Read-in
+  println("\nX-values are: ");
+  printArray(ptX);
+  println("\nY-values are: ");
+  printArray(ptY);
   /*
   ptX[1] = ptX[5] = ptX[9] = ptX[13] = appWidth*0/3;
   ptX[2] = ptX[6] = ptX[10] = ptX[14] = appWidth*1/3;
