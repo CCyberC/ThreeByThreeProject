@@ -138,9 +138,9 @@ void draw()
   //
   for (int j=0; j<5; j++) {
     for (int i=1; i<ptX.length; i+=4) {
-      rect(ptX[i], ptY[i], rectWidth, rectHeight);
+      rect(ptY[i], ptY[i], rectWidth, rectHeight);
       fill(black);
-      ellipse(ptX[i], ptY[i], ptDiameter, ptDiameter);
+      ellipse(ptY[i], ptY[i], ptDiameter, ptDiameter);
       fill(resetWhite);
     }
   }
