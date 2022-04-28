@@ -127,6 +127,27 @@ void setup()
 //
 void draw() 
 {
+  for (int j=0; j<2; j+=4) {
+    for (int i=1; i<4; i++) {
+      rect(ptX[i+j], ptY[i+j], rectWidth, rectHeight);
+      fill(black);
+      ellipse(ptX[i+j], ptY[i+j], ptDiameter, ptDiameter);
+      fill(resetWhite);
+    }
+  }
+  //
+  for (int j=0; j<5; j++) {
+    for (int i=1; i<ptX.length; i+=4) {
+      rect(ptX[i], ptY[i], rectWidth, rectHeight);
+      fill(black);
+      ellipse(ptX[i], ptY[i], ptDiameter, ptDiameter);
+      fill(resetWhite);
+    }
+  }
+  //
+  fill(red);
+  //
+  /*
   for (int i=1; i<4; i++) {
     rect(ptX[i], ptY[i], rectWidth, rectHeight);
     fill(black);
@@ -156,6 +177,7 @@ void draw()
     ellipse(ptX[i], ptY[i], ptDiameter, ptDiameter);
   }
   fill(resetWhite); //Best Practice
+  */
   //
   /*
   rect(ptX[1], ptY[1], rectWidth, rectHeight); 
