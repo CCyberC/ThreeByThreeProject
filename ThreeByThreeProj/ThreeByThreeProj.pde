@@ -21,15 +21,15 @@ void setup()
   rectHeight = appHeight*1/3;
   ptDiameter = appWidth*1/50;
   //
-  for (int j=0; j<5; j++) {
+  for (int j=0; j<4; j++) {
     for (int i=1; i<ptX.length; i+=4) {
       ptX[i+j] = appWidth*j/3;
     }
   }
   //
   for (int j=0; j<4; j++) {
-    for (int i=1; i<ptX.length; i++) {
-      ptY[i+j] = appHeight*j/3;
+    for (int i=1; i<5; i++) {
+      ptY[i+j*4] = appHeight*j/3;
     }
   }
   //
@@ -127,7 +127,7 @@ void setup()
 //
 void draw() 
 {
-  for (int j=0; j<2; j+=4) {
+  for (int j=0; j<9; j+=4) {
     for (int i=1; i<4; i++) {
       rect(ptX[i+j], ptY[i+j], rectWidth, rectHeight);
       fill(black);
@@ -136,16 +136,8 @@ void draw()
     }
   }
   //
-  for (int j=0; j<5; j++) {
-    for (int i=1; i<ptX.length; i+=4) {
-      rect(ptY[i], ptY[i], rectWidth, rectHeight);
-      fill(black);
-      ellipse(ptY[i], ptY[i], ptDiameter, ptDiameter);
-      fill(resetWhite);
-    }
-  }
   fill(red);
-
+  //
   for (int i=4; i<13; i+=4) {
     ellipse(ptX[i], ptY[i], ptDiameter, ptDiameter);
   }
