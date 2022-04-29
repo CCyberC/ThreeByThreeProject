@@ -32,20 +32,20 @@ void setup()
   ptY[9] = ptY[10] = ptY[11] = ptY[12] = appHeight*2/3;
   ptY[13] = ptY[14] = ptY[15] = ptY[16] = appHeight*3/3;
   //
-  buttonX[1] = appWidth*(1/3)*(1/3); //Section 1; subsection 2, numerator is 1
-  buttonY[1] = appHeight*(1/3)*(1/3); //Section 2; subsection 2, numerator is 1
+  buttonX[1] = appWidth*(1/3)*(1/3); //Section 1; subsection 1, numerator is 1
+  buttonY[1] = appHeight*(1/3)*(1/3); //Section 1; subsection 2, numerator is 1
   buttonWidth[1] = appWidth*(1/3)*(1/3); //widthDenominator count = 9 ... 1/9
   buttonHeight[1] = appHeight*(1/3)*(1/3); //heightDenominator count = 9 ... 1/9
   //
-  buttonX[2] = appWidth;
-  buttonY[2] = appHeight;
-  buttonWidth[2] = appWidth;
-  buttonHeight[2] = appHeight;
+  buttonX[2] = appWidth; //Section 2; subsection 1, numerator is 1
+  buttonY[2] = appHeight; //Section 2; subsection 2, numerator is 1
+  buttonWidth[2] = appWidth*(1/3)*(1/2); //widthDenominator count = 6 ... 1/6
+  buttonHeight[2] = appHeight*(1/3)*(1/2); //heightDenominator count = 6 ... 1/6
   //
-  buttonX[3] = appWidth;
-  buttonY[3] = appHeight;
-  buttonWidth[3] = appWidth;
-  buttonHeight[3] = appHeight;
+  buttonX[3] = appWidth; //Section 3; subsection 1, numerator is 1
+  buttonY[3] = appHeight; //Section 3; subsection 2, numerator is 1
+  buttonWidth[3] = appWidth; //widthDenominator count = 6 ... 1/6
+  buttonHeight[3] = appHeight; //heightDenominator count = 6 ... 1/6
   //
 }//End setup
 //
