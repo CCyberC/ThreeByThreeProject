@@ -32,6 +32,21 @@ void setup()
   ptY[9] = ptY[10] = ptY[11] = ptY[12] = appHeight*2/3;
   ptY[13] = ptY[14] = ptY[15] = ptY[16] = appHeight*3/3;
   //
+  buttonX[1] = ;
+  buttonY[1] = ;
+  buttonWidth[1] = ;
+  buttonHeight[1] = ;
+  //
+  buttonX[2] = ;
+  buttonY[2] = ;
+  buttonWidth[2] = ;
+  buttonHeight[2] = ;
+  //
+  buttonX[3] = ;
+  buttonY[3] = ;
+  buttonWidth[3] = ;
+  buttonHeight[3] = ;
+  //
 }//End setup
 //
 void draw() {
@@ -47,9 +62,11 @@ void draw() {
   rect(ptX[11], ptY[11], rectWidth, rectHeight);
   //
   fill(black);
-  rect();
-  rect();
-  rect();
+  rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
+  rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
+  rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
+  fill(resetWhite);
+  //
   //Starting pts for rect() must be 1-9 & filled black
   ellipse(ptX[1], ptY[1], ptDiameter, ptDiameter);
   ellipse(ptX[2], ptY[2], ptDiameter, ptDiameter);
