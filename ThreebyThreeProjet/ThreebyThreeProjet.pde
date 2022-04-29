@@ -6,7 +6,11 @@ int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
 int numberOfButtons = 3; //will be 9
-float[] buttonX, buttonY, buttonWidth, buttonHeight;
+float[] buttonX = new float[numberOfButtons];
+float[] buttonY = new float[numberOfButtons];
+float[] buttonWidth = new float[numberOfButtons];
+float[] buttonHeight = new float[numberOfButtons];
+//
 //
 void setup()
 {
