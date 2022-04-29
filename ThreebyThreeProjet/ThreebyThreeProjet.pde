@@ -32,20 +32,20 @@ void setup()
   ptY[9] = ptY[10] = ptY[11] = ptY[12] = appHeight*2/3;
   ptY[13] = ptY[14] = ptY[15] = ptY[16] = appHeight*3/3;
   //
-  buttonX[1] = ;
-  buttonY[1] = ;
-  buttonWidth[1] = ;
-  buttonHeight[1] = ;
+  buttonX[1] = appWidth;
+  buttonY[1] = appHeight;
+  buttonWidth[1] = appWidth;
+  buttonHeight[1] = appHeight;
   //
-  buttonX[2] = ;
-  buttonY[2] = ;
-  buttonWidth[2] = ;
-  buttonHeight[2] = ;
+  buttonX[2] = appWidth;
+  buttonY[2] = appHeight;
+  buttonWidth[2] = appWidth;
+  buttonHeight[2] = appHeight;
   //
-  buttonX[3] = ;
-  buttonY[3] = ;
-  buttonWidth[3] = ;
-  buttonHeight[3] = ;
+  buttonX[3] = appWidth;
+  buttonY[3] = appHeight;
+  buttonWidth[3] = appWidth;
+  buttonHeight[3] = appHeight;
   //
 }//End setup
 //
