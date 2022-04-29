@@ -5,7 +5,7 @@ float rectWidth, rectHeight, ptDiameter;
 int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
-int numberOfButtons = 3; //will be 9
+int numberOfButtons = 4; //will be 9
 float[] buttonX = new float[numberOfButtons];
 float[] buttonY = new float[numberOfButtons];
 float[] buttonWidth = new float[numberOfButtons];
@@ -37,13 +37,13 @@ void setup()
   buttonWidth[1] = appWidth*(1/3)*(1/3); //widthDenominator count = 9 ... 1/9
   buttonHeight[1] = appHeight*(1/3)*(1/3); //heightDenominator count = 9 ... 1/9
   //
-  buttonX[2] = appWidth*1/2; //Section 2; subsection 1, numerator is 1
-  buttonY[2] = appHeight*1/3; //Section 2; subsection 2, numerator is 1
+  buttonX[2] = appWidth*1/2; //Section 2; subsection 1, numerator is 3
+  buttonY[2] = appHeight*1/3; //Section 2; subsection 2, numerator is 2
   buttonWidth[2] = appWidth*(1/3)*(1/2); //widthDenominator count = 6 ... 1/6
   buttonHeight[2] = appHeight*(1/3)*(1/2); //heightDenominator count = 6 ... 1/6
   //
-  buttonX[3] = appWidth*(11/15); //Section 3; subsection 1, numerator is 1
-  buttonY[3] = appHeight*(11/15); //Section 3; subsection 2, numerator is 1
+  buttonX[3] = appWidth*(11/15); //Section 3; subsection 1, numerator is 11
+  buttonY[3] = appHeight*(14/15); //Section 3; subsection 2, numerator is 14
   buttonWidth[3] = appWidth*(1/3)*(1/5); //widthDenominator count = 15 ... 1/15
   buttonHeight[3] = appHeight*(1/3)*(1/5); //heightDenominator count = 15 ... 1/15
   //
