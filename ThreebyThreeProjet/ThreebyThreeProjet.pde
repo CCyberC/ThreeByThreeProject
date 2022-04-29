@@ -68,6 +68,7 @@ void draw() {
   fill(resetWhite);
   //
   //Starting pts for rect() must be 1-9 & filled black
+  fill(black);
   ellipse(ptX[1], ptY[1], ptDiameter, ptDiameter);
   ellipse(ptX[2], ptY[2], ptDiameter, ptDiameter);
   ellipse(ptX[3], ptY[3], ptDiameter, ptDiameter);
