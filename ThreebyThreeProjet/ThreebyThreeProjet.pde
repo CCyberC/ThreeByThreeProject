@@ -48,6 +48,9 @@ void setup()
   buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0); //heightDenominator count = 15 ... 1/15
   //
   printArray(buttonX);
+  printArray(buttonY);
+  printArray(buttonWidth);
+  printArray(buttonHeight);
   //
 }//End setup
 //
