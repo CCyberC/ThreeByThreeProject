@@ -92,10 +92,10 @@ void draw() {
   } //Button 3
   if (mouseX>=ptX[3] && mouseX<=ptX[3]+rectWidth && mouseY>=ptY[3] && mouseY<=ptY[3]+rectHeight) {
     fill(yellow);
-    rect(ptX[3], rectWidth, ptY[3], rectHeight);
+    rect(ptX[3], ptY[3], rectWidth, rectHeight);
   } else {
     fill(black);
-    rect(ptX[3], rectWidth, ptY[3], rectHeight);
+    rect(ptX[3], ptY[3], rectWidth, rectHeight);
   } //Button 4 (RESET), the whole section
   fill(resetWhite);
   //
