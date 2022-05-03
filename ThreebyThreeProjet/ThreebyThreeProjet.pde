@@ -97,12 +97,9 @@ void draw() {
     fill(black);
     rect(ptX[3], rectWidth, ptY[3], rectHeight);
   } //Button 4 (RESET), the whole section
-  fill(black);
-  
-  
-  
   fill(resetWhite);
   //
+  fill(black);
   //Starting pts for rect() must be 1-9 & filled black
   fill(black);
   ellipse(ptX[1], ptY[1], ptDiameter, ptDiameter);
