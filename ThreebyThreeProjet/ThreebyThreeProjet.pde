@@ -32,7 +32,6 @@ void draw() {
   //
   hoverOver();
   //
-  fill(black);
   //Starting pts for rect() must be 1-9 & filled black
   fill(black);
   ellipse(ptX[1], ptY[1], ptDiameter, ptDiameter);
