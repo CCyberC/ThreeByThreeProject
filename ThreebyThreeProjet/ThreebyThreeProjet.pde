@@ -21,7 +21,11 @@ void setup()
 void draw() {
   //Rectangles must be 3 by 3
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
-  rect(ptX[2], ptY[2], rectWidth, rectHeight);
+  //
+  //fill();
+  rect(ptX[2], ptY[2], rectWidth, rectHeight); //Buttons change the Color of RECT(#2)
+  fill(resetWhite);
+  //
   rect(ptX[3], ptY[3], rectWidth, rectHeight);
   rect(ptX[5], ptY[5], rectWidth, rectHeight);
   rect(ptX[6], ptY[6], rectWidth, rectHeight);
@@ -61,6 +65,7 @@ void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() {
+  ClickMe();
 }//End mousePressed
 //
 //End MAIN Program
