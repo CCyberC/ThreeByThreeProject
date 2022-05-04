@@ -25,11 +25,11 @@ void ClickMe()
   }
   if (mouseX>=buttonX[6] && mouseX<=buttonX[6]+buttonWidth[6] && mouseY>=buttonY[6] && mouseY<=buttonY[6]+buttonHeight[6]) {
     println("BTN 6 Activated");
-    if () {
-    } else 
-    {
+    if (turnOnOrange==true) {
+      turnOnOrange=false;
+    } else {
+      turnOnOrange=true;
     }
-    turnOnOrange=true;
   }
   if (mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight[7]) {
     println("BTN 7 Activated");
@@ -42,10 +42,10 @@ void ClickMe()
   }
   if (mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10]) {
     println("BTN 10 Activated");
-    if () {
-    } else 
-    {
+    if (turnOnBrown==true) {
+      turnOnBrown=false;
+    } else {
+      turnOnBrown=true;
     }
-    turnOnBrown=true;
   }
 }//End ClickMe
