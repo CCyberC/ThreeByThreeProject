@@ -1,4 +1,4 @@
-int numberOfButtons = 11; //will be 9
+int numberOfButtons = 11; //Quit, Reset, 1 per square minimum
 float[] buttonX = new float[numberOfButtons];
 float[] buttonY = new float[numberOfButtons];
 float[] buttonWidth = new float[numberOfButtons];
