@@ -1,7 +1,7 @@
 //Global Variables
-color black=0, resetWhite=255; //Not nightMode (lots of Blue)
+color black=0, resetWhite=255, orange=#FCC161; //Not nightMode (lots of Blue)
 color red=color(255, 0, 0), yellow=color(255, 255, 0); //nightMode
-Boolean turnOnYellow=false;
+Boolean turnOnYellow=false, turnOnOrange=false;
 float rectWidth, rectHeight, ptDiameter;
 //Points are organized by row and actually ... hint-hint ... value
 int numberOfPoints = 17;
@@ -23,6 +23,7 @@ void draw() {
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
   //
   if ( turnOnYellow==true ) fill(yellow); //yellow
+  if ( turnOnOrange==true ) fill(orange); //orange 
   rect(ptX[2], ptY[2], rectWidth, rectHeight); //Buttons change the Color of RECT(#2)
   fill(resetWhite);
   //
