@@ -22,7 +22,7 @@ void draw() {
   //Rectangles must be 3 by 3
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
   //
-  //fill();
+  if ( turnOnYellow==true ) fill(yellow); //yellow
   rect(ptX[2], ptY[2], rectWidth, rectHeight); //Buttons change the Color of RECT(#2)
   fill(resetWhite);
   //
