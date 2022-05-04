@@ -14,6 +14,7 @@ void ClickMe()
     println("BTN 4 Activated");
     turnOnYellow=false;
     turnOnOrange=false;
+    turnOnBrown=false;
   }
   if (mouseX>=buttonX[5] && mouseX<=buttonX[5]+buttonWidth[5] && mouseY>=buttonY[5] && mouseY<=buttonY[5]+buttonHeight[5]) {
     println("BTN 5 Activated");
@@ -33,5 +34,6 @@ void ClickMe()
   }
   if (mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10]) {
     println("BTN 10 Activated");
+    turnOnBrown=true;
   }
 }//End ClickMe
