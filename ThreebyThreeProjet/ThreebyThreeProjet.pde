@@ -16,6 +16,7 @@ void setup()
   //
   Population();
   //
+  CloseFileSetUp();
 }//End setup
 //
 void draw() {
