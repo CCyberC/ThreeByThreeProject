@@ -16,7 +16,6 @@ void setup()
   //
   Population();
   //
-  CloseFileSetUp();
 }//End setup
 //
 void draw() {
@@ -66,10 +65,12 @@ void draw() {
 }//End draw
 //
 void keyPressed() {
+  CloseFilekeyPressed();
 }//End keyPressed
 //
 void mousePressed() {
   ClickMe();
+  CloseFilemousePressed();
 }//End mousePressed
 //
 //End MAIN Program

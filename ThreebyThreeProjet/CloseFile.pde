@@ -1,23 +1,19 @@
 void CloseFileSetUp() {
-  quitButtonX = appWidth*1/4; //1/4 on one-half, 1/4 on other half
-  quitButtonY = appHeight*1/4;
-  quitButtonWidth = appWidth*1/2;
-  quitButtonHeight = appHeight*1/2;
+  buttonX[3] = appWidth*(6.0/15.0); //Section 3; subsection 1, numerator is 11
+  buttonY[3] = appHeight*(1.0/3.0)*(3.0/5.0); //Section 3; subsection 2, numerator is 13
+  buttonWidth[3] = appWidth*(1.0/3.0)*(3.0/5.0); //widthDenominator count = 15 ... 1/15
+  buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0); //heightDenominator count = 15 ... 1/15
 }//End CloseFile
 //
 void CloseFileDraw() {
-  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) {
-    buttonColour = red;
-  } else {
-    buttonColour = blue;
-  }//End Hover-Over Effect
-  //Verifying of mouse on the button/Alternate Verification that mouseX&Y is on the button
-  println("X-Value", quitButtonX, mouseX, quitButtonX+quitButtonWidth, "/t/t Look at the middle value");
-  println("Y-Value", quitButtonY, mouseY, quitButtonX+quitButtonHeight, "/t/t Look at the middle value");
-  //
-  buttonX[3]
 }//End CloseFileDraw
 //
 void CloseFilekeyPressed() {
   if ( key=='Q' || key=='q' ) exit();
 }//End CloseFilekeyPressed
+//
+void CloseFilemousePressed() {
+  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) exit(); {
+    println("BTN 3 Activated");
+  }
+}//End CloseFilemousePressed
