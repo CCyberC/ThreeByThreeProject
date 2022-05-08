@@ -13,6 +13,13 @@ void ClickMe()
     turnOnYellow=false;
     turnOnOrange=false;
     turnOnBrown=false;
+    NewsReport=false; 
+    DiaryEntry1=false; 
+    DiaryEntry2=false; 
+    DiaryEntry3=false; 
+    Evidence1=false; 
+    Evidence2=false;
+    Letter=false;
   }
   //button[3] switched to Close File
   //button [4] switched to DiaryEntry1
