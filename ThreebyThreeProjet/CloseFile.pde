@@ -1,4 +1,5 @@
-String T = "Restart File";
+String CF = "Close File";
+String RF = "Restart File";
 float TX, TY, TW, TH;
 PFont TFont;
 color TR=#CEB6AD, TresetDefaultInk=#FFFFFF;
@@ -18,7 +19,7 @@ void CloseFilekeyPressed() {
 }//End CloseFilekeyPressed
 //
 void CloseFilemousePressed() {
-  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) exit(); 
+  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) exit();
   {
     println("BTN 3 Activated");
   }
@@ -28,6 +29,21 @@ void CloseFileText() {
   fill(TR); 
   textAlign(CENTER, CENTER); 
   textFont(TFont, 120); 
-  text(T, TX, TY, TW, TH);
+  text(CF, TX, TY, TW, TH);
   fill(TresetDefaultInk);
 }//End CloseFileText
+//
+void RestartFileSetUp() {
+  
+}//End RestartFileSetUp
+//
+void RestartFileDraw() {
+  
+}//End RestartFileDraw
+//
+void RestartFilemousePressed() {
+  if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2])
+  {
+    println("BTN 2 Activated");
+  }
+}//End RestartFilemousePressed
