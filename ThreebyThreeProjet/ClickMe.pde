@@ -15,9 +15,7 @@ void ClickMe()
     turnOnBrown=false;
   }
   //button[3] switched to Close File
-  if (mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight[4]) {
-    println("BTN 4 Activated");
-  }
+  //button [4] switched to DiaryEntry1
   if (mouseX>=buttonX[5] && mouseX<=buttonX[5]+buttonWidth[5] && mouseY>=buttonY[5] && mouseY<=buttonY[5]+buttonHeight[5]) {
     println("BTN 5 Activated");
   }

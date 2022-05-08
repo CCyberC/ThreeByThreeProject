@@ -1,7 +1,7 @@
 //Global Variables
 color black=0, resetWhite=255, orange=#FCC161, brown=#985E00, green=#66D165; //Not nightMode (lots of Blue)
 color red=color(255, 0, 0), yellow=color(255, 234, 0); //nightMode
-Boolean turnOnYellow=false, turnOnOrange=false, turnOnBrown=false;
+Boolean turnOnYellow=false, turnOnOrange=false, turnOnBrown=false, NewsReport=false, DiaryEntry1=false, DiaryEntry2=false, DiaryEntry3=false, Evidence1=false, Evidence2=false, Letter=false;
 float rectWidth, rectHeight, ptDiameter;
 //Points are organized by row and actually ... hint-hint ... value
 int numberOfPoints = 17;
@@ -11,7 +11,7 @@ float[] ptY = new float[numberOfPoints];
 //
 void setup()
 {
-  size(2400, 1600); //fillScreen(); //displayWidth, displayHeight
+  size(2400, 1600); //fullScreen(); //displayWidth, displayHeight
   displayOrientation();
   //
   Population();
