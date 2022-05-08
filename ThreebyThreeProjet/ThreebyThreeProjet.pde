@@ -40,6 +40,7 @@ void draw() {
   hoverOver();
   //
   //Starting pts for rect() must be 1-9 & filled black
+  /*
   fill(black);
   ellipse(ptX[1], ptY[1], ptDiameter, ptDiameter);
   ellipse(ptX[2], ptY[2], ptDiameter, ptDiameter);
@@ -62,6 +63,7 @@ void draw() {
   ellipse(ptX[15], ptY[15], ptDiameter, ptDiameter);
   ellipse(ptX[16], ptY[16], ptDiameter, ptDiameter);
   fill(resetWhite); //Best Practice
+  */
 }//End draw
 //
 void keyPressed() {
