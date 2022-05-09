@@ -6,6 +6,7 @@ int largerP1D, smallerP1D;
 float p1WAdjusted, p1HAdjusted;
 //
 void NewsReportSU() {
+  /*
   int p1W = 1200;
   int p1H = 580;
   if ( p1W >= p1H ) { //ID Larger Dimension: Landscape and Square
@@ -30,7 +31,13 @@ void NewsReportSU() {
   p1WAdjusted = rWP1 * iWRatioP1;
   p1HAdjusted = rHP1 * iHRatioP1;
   println (p1W, p1H);
-  println (p1WAdjusted, p1HAdjusted);  
+  println (p1WAdjusted, p1HAdjusted); 
+  */
+  /*
+  translate(0,0);
+  texture(p1);
+  rect(ptX[3],ptY[3],rectWidth,rectHeight*2);
+  */
 }//End NewsReport
 //
 void NewsReportDraw() {
