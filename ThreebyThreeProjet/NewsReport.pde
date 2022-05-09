@@ -49,5 +49,10 @@ void NewsReportmP() {
 }//End NewsReportmP
 //
 void NewsReportText() {
-  
+  rect(buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
+  fill(grey);
+  textAlign(CENTER, CENTER);
+  textFont(npFont, 50);
+  text(NextPage, buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
+  fill(resetWhite);
 }//End NewsReportText

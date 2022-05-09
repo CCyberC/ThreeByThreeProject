@@ -9,7 +9,6 @@ float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
 color grey=#E8E8E8, resetDefaultInk=#FFFFFF;
 String NextPage = "Next Page";
-float npX, npY, npWidth, npHeight;
 PFont npFont;
 //
 //
@@ -45,6 +44,7 @@ void draw() {
   hoverOver();
   //
   NewsReportDraw();
+  NewsReportText();
   //
   //Starting pts for rect() must be 1-9 & filled black
   /*

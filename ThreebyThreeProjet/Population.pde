@@ -75,4 +75,6 @@ void Population()
   printArray(buttonHeight);
   //
   p1 = loadImage("pngtree-news-interview-news-report-background-picture-image_1473874.jpg");
+  //
+  npFont = createFont("Bahnschrift-48", 55);
 }//End Population
