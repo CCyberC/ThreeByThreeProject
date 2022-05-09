@@ -1,3 +1,10 @@
+float rXP4, rYP4, rWP4, rHP4;
+PImage p4;
+float iWRatioP4=0.0, iHRatioP4=0.0;
+Boolean wP4Larger=false, hP4Larger=false;
+int largerP4D, smallerP4D;
+float p4WAdjusted, p4HAdjusted;
+//
 void Letter() {
   
 }//End Letter
@@ -32,18 +39,18 @@ void LetterText() {
   fill(resetWhite);
 }//End NewsReportText
 //
-void EvidenceSU() {
-  int p3W = 1200;
-  int p3H = 580;
-  if ( p3W >= p3H ) { //ID Larger Dimension: Landscape and Square
-    largerP3D = p3W;
-    smallerP3D = p3H;
+void LetterSU() {
+  int p4W = 1200;
+  int p4H = 900;
+  if ( p4W >= p4H ) { //ID Larger Dimension: Landscape and Square
+    largerP3D = p4W;
+    smallerP3D = p4H;
     wP3Larger = true;
   } else { //ID Larger Dimension: Portrait mode
-    largerP3D = p3H;
-    smallerP3D = p3W;
-    hP3Larger = true;
-  } //End pic3 larger dimension ID
+    largerP4D = p4H;
+    smallerP4D = p4W;
+    hP4Larger = true;
+  } //End pic4 larger dimension ID
   println (smallerP4D, largerP4D);
   if ( wP4Larger == true ) iWRatioP4 = float (largerP4D) / float (largerP4D);
   if ( wP4Larger == true ) iHRatioP4 = float (smallerP4D) / float (largerP4D);
@@ -53,7 +60,7 @@ void EvidenceSU() {
   rXP4 = ptX[1]; 
   rYP4 = ptY[1]; 
   rWP4 = rectWidth; 
-  rHP4 = rectHeight*2;
+  rHP4 = rectHeight;
   p4WAdjusted = rWP4 * iWRatioP4;
   p4HAdjusted = rHP4 * iHRatioP4;
   println (p4W, p4H);

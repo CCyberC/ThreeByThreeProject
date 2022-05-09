@@ -10,8 +10,8 @@ void Evidence1() {
 }//End Evidence
 //
 void EvidenceSU() {
-  int p3W = 1200;
-  int p3H = 580;
+  int p3W = 800;
+  int p3H = 627;
   if ( p3W >= p3H ) { //ID Larger Dimension: Landscape and Square
     largerP3D = p3W;
     smallerP3D = p3H;
@@ -30,7 +30,7 @@ void EvidenceSU() {
   rXP3 = ptX[9]; 
   rYP3 = ptY[9]; 
   rWP3 = rectWidth; 
-  rHP3 = rectHeight*2;
+  rHP3 = rectHeight;
   p3WAdjusted = rWP3 * iWRatioP3;
   p3HAdjusted = rHP3 * iHRatioP3;
   println (p3W, p3H);
