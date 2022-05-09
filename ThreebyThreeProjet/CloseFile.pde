@@ -45,8 +45,8 @@ void RestartFilemousePressed() {
   if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2]) {
     println("BTN 2 Activated");
     turnOnYellow=false;
-    turnOnOrange=false;
-    turnOnBrown=false;
+    //turnOnOrange=false;
+    //turnOnBrown=false;
     NewsReport=false; 
     DiaryEntry1=false; 
     DiaryEntry2=false; 

@@ -16,6 +16,7 @@ void setup()
   //
   Population();
   //
+  NewsReportSU();
 }//End setup
 //
 void draw() {
