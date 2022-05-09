@@ -12,3 +12,12 @@ void Evidence1mP() {
     }
   }
 }//End DiaryEntry3mP
+//
+void EvidenceText() {
+  rect(buttonX[8], buttonY[8], buttonWidth[8], buttonHeight[8]);
+  fill(grey);
+  textAlign(CENTER, CENTER);
+  textFont(npFont, 50);
+  text(NextPage, buttonX[8], buttonY[8], buttonWidth[8], buttonHeight[8]);
+  fill(black);
+}//End NewsReportText

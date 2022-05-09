@@ -54,5 +54,5 @@ void NewsReportText() {
   textAlign(CENTER, CENTER);
   textFont(npFont, 50);
   text(NextPage, buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
-  fill(resetWhite);
+  fill(black);
 }//End NewsReportText

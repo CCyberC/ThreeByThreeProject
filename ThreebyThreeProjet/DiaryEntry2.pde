@@ -12,3 +12,12 @@ void DiaryEntry2mP() {
     }
   }
 }//End DiaryEntry2mP
+//
+void DiaryEntry2Text() {
+  rect(buttonX[10], buttonY[10], buttonWidth[10], buttonHeight[10]);
+  fill(grey);
+  textAlign(CENTER, CENTER);
+  textFont(npFont, 50);
+  text(NextPage, buttonX[10], buttonY[10], buttonWidth[10], buttonHeight[10]);
+  fill(black);
+}//End NewsReportText

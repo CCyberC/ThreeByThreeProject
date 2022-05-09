@@ -22,3 +22,12 @@ void LettermP() {
   }
   */
 }//End DiaryEntry3mP
+//
+void LetterText() {
+  rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
+  fill(grey);
+  textAlign(CENTER, CENTER);
+  textFont(npFont, 50);
+  text(NextPage, buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
+  fill(black);
+}//End NewsReportText

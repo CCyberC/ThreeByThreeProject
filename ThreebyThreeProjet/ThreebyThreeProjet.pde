@@ -45,6 +45,12 @@ void draw() {
   //
   NewsReportDraw();
   NewsReportText();
+  DiaryEntryText();
+  DiaryEntry2Text();
+  DiaryEntry3Text();
+  EvidenceText();
+  Evidence2Text();
+  LetterText();
   //
   //Starting pts for rect() must be 1-9 & filled black
   /*
