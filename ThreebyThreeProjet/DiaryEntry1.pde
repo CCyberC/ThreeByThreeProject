@@ -1,45 +1,40 @@
-float rXP1, rYP1, rWP1, rHP1;
-PImage p1;
-float iWRatioP1=0.0, iHRatioP1=0.0;
-Boolean wP1Larger=false, hP1Larger=false;
-int largerP1D, smallerP1D;
-float p1WAdjusted, p1HAdjusted;
-//
-void DiaryEntrySU() {
-  int p1W = 1200;
-  int p1H = 580;
-  if ( p1W >= p1H ) { //ID Larger Dimension: Landscape and Square
-    largerP1D = p1W;
-    smallerP1D = p1H;
-    wP1Larger = true;
-  } else { //ID Larger Dimension: Portrait mode
-    largerP1D = p1H;
-    smallerP1D = p1W;
-    hP1Larger = true;
-  } //End pic1 larger dimension ID
-  println (smallerP1D, largerP1D);
-  if ( wP1Larger == true ) iWRatioP1 = float (largerP1D) / float (largerP1D);
-  if ( wP1Larger == true ) iHRatioP1 = float (smallerP1D) / float (largerP1D);
-  if ( hP1Larger == true ) iWRatioP1 = float (smallerP1D) / float (largerP1D);
-  if ( hP1Larger == true ) iHRatioP1 = float (largerP1D) / float (largerP1D);
-  println(iWRatioP1, iHRatioP1);
-  rXP1 = ptX[3]; 
-  rYP1 = ptY[3]; 
-  rWP1 = rectWidth; 
-  rHP1 = rectHeight*2;
-  p1WAdjusted = rWP1 * iWRatioP1;
-  p1HAdjusted = rHP1 * iHRatioP1;
-  println (p1W, p1H);
-  println (p1WAdjusted, p1HAdjusted);  
-}//End NewsReport
-//
-void DiaryEntryDraw() {
-  image(p1, rXP1, rYP1, p1WAdjusted, p1HAdjusted);
-}//End NewsReportDraw
+
 //
 void DiaryEntry1() {
   
 }//End DiaryEntry1
+//
+void DiaryEntrySU() {
+  int p2W = 536;
+  int p2H = 360;
+  if ( p2W >= p2H ) { //ID Larger Dimension: Landscape and Square
+    largerP2D = p2W;
+    smallerP2D = p2H;
+    wP2Larger = true;
+  } else { //ID Larger Dimension: Portrait mode
+    largerP2D = p2H;
+    smallerP2D = p2W;
+    hP2Larger = true;
+  } //End pic2 larger dimension ID
+  println (smallerP2D, largerP2D);
+  if ( wP2Larger == true ) iWRatioP2 = float (largerP2D) / float (largerP2D);
+  if ( wP2Larger == true ) iHRatioP2 = float (smallerP2D) / float (largerP2D);
+  if ( hP2Larger == true ) iWRatioP2 = float (smallerP2D) / float (largerP2D);
+  if ( hP2Larger == true ) iHRatioP2 = float (largerP2D) / float (largerP2D);
+  println(iWRatioP2, iHRatioP2);
+  rXP2 = ptX[7]; 
+  rYP2 = ptY[7]; 
+  rWP2 = rectWidth; 
+  rHP2 = rectHeight;
+  p2WAdjusted = rWP2 * iWRatioP2;
+  p2HAdjusted = rHP2 * iHRatioP2;
+  println (p2W, p2H);
+  println (p2WAdjusted, p2HAdjusted);  
+}//End NewsReport
+//
+void DiaryEntryDraw() {
+  image(p2, rXP2, rYP2, p2WAdjusted, p2HAdjusted);
+}//End NewsReportDraw
 //
 void DiaryEntry1mP() {
   if (mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight[7]) {

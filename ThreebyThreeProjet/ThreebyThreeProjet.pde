@@ -11,6 +11,12 @@ color grey=#E8E8E8, resetDefaultInk=#FFFFFF;
 String NextPage = "Next Page";
 PFont npFont;
 //
+float rWP2, rHP2;
+PImage p2;
+float iWRatioP2=0.0, iHRatioP2=0.0;
+Boolean wP2Larger=false, hP2Larger=false;
+int largerP2D, smallerP2D;
+float p2WAdjusted, p2HAdjusted;
 //
 void setup()
 {
@@ -20,6 +26,11 @@ void setup()
   Population();
   //
   NewsReportSU();
+  DiaryEntrySU();
+  DiaryEntry2SU();
+  DiaryEntry3SU();
+  EvidenceSU();
+  LetterSU();
 }//End setup
 //
 void draw() {
@@ -44,13 +55,12 @@ void draw() {
   hoverOver();
   //
   NewsReportDraw();
-  NewsReportText();
-  DiaryEntryText();
-  DiaryEntry2Text();
-  DiaryEntry3Text();
-  EvidenceText();
-  Evidence2Text();
-  LetterText();
+  DiaryEntryDraw();
+  DiaryEntry2Draw();
+  DiaryEntry3Draw();
+  EvidenceDraw();
+  //Evidence2Draw();
+  LetterDraw();
   //
   //Starting pts for rect() must be 1-9 & filled black
   /*

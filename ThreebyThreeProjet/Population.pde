@@ -75,10 +75,10 @@ void Population()
   printArray(buttonHeight);
   //
   p1 = loadImage("pngtree-news-interview-news-report-background-picture-image_1473874.jpg");
-  p2 = loadImage("660-6603350_and-heres-a-wip-preview-of-the-diary.png");
+  p2 = loadImage("360_F_65392436_Fx6DsEnZScSCfIwo6bqiCjKcKUCB6OmB.jpg");
   p3 = loadImage("800px_COLOURBOX7561229.jpg");
   p4 = loadImage("3693386.jpg");
   //
   npFont = createFont("Bahnschrift-48", 55);
-  dEFont = createFont("Chiller-Regular-48", 55);
+  //dEFont = createFont("Chiller-Regular-48", 55);
 }//End Population
