@@ -84,9 +84,16 @@ void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() {
-  ClickMe();
+  LettermP();
+  RestartFilemousePressed();
   CloseFilemousePressed();
   NewsReportmP();
+  Evidence2mP();
+  OpenFilemP();
+  DiaryEntry1mP();
+  Evidence1mP();
+  DiaryEntry3mP();
+  DiaryEntry2mP();
 }//End mousePressed
 //
 //End MAIN Program
