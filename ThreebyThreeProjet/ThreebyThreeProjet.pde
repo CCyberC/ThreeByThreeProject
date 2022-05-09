@@ -7,6 +7,10 @@ float rectWidth, rectHeight, ptDiameter;
 int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
+color grey=#E8E8E8, resetDefaultInk=#FFFFFF;
+String NextPage = "Next Page";
+float npX, npY, npWidth, npHeight;
+PFont npFont;
 //
 //
 void setup()
@@ -39,6 +43,8 @@ void draw() {
   rect(ptX[11], ptY[11], rectWidth, rectHeight);
   //
   hoverOver();
+  //
+  NewsReportDraw();
   //
   //Starting pts for rect() must be 1-9 & filled black
   /*
@@ -74,6 +80,7 @@ void keyPressed() {
 void mousePressed() {
   ClickMe();
   CloseFilemousePressed();
+  NewsReportmP();
 }//End mousePressed
 //
 //End MAIN Program

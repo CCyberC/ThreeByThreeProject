@@ -26,7 +26,7 @@ void NewsReportSU() {
   rXP1 = ptX[3]; 
   rYP1 = ptY[3]; 
   rWP1 = rectWidth; 
-  rHP1 = rectHeight;
+  rHP1 = rectHeight*2;
   p1WAdjusted = rWP1 * iWRatioP1;
   p1HAdjusted = rHP1 * iHRatioP1;
   println (p1W, p1H);
@@ -47,3 +47,7 @@ void NewsReportmP() {
     }
   }
 }//End NewsReportmP
+//
+void NewsReportText() {
+  
+}//End NewsReportText
