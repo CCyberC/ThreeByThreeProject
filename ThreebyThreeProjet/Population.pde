@@ -80,5 +80,5 @@ void Population()
   p4 = loadImage("3693386.jpg");
   //
   npFont = createFont("Bahnschrift-48", 55);
-  dEFont = createFont("");
+  dEFont = createFont("Chiller-Regular-48", 55);
 }//End Population
