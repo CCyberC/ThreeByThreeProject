@@ -25,7 +25,7 @@ void draw() {
   //if ( turnOnYellow==true ) fill(yellow); 
   //if ( turnOnOrange==true ) fill(orange); //Overwrites the yellow with orange
   //if ( turnOnBrown==true ) fill(brown); //Overwrites the yellow and orange
-  if ( turnOnYellow==true ) {fill(yellow);} else if ( turnOnOrange==true) {fill(orange);} else if ( turnOnBrown==true ) {fill(brown);}
+  //if ( turnOnYellow==true ) {fill(yellow);} else if ( turnOnOrange==true) {fill(orange);} else if ( turnOnBrown==true ) {fill(brown);}
   rect(ptX[2], ptY[2], rectWidth, rectHeight); //Buttons change the Color of RECT(#2)
   fill(resetWhite);
   //
