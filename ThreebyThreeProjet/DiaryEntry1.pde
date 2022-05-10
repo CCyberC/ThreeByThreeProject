@@ -60,7 +60,7 @@ void DE1() {
   rect(ptX[7]+(rectWidth*1/4), ptY[7], rectWidth*1/2, rectHeight*1/2);
   fill(grey);
   textAlign(CENTER, CENTER);
-  textFont(dEFont, 50);
+  textFont(dEFont, 20);
   text(DD, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
   fill(black);
 }//End DE1
