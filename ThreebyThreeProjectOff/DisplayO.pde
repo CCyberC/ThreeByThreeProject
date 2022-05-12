@@ -4,8 +4,8 @@ void displayOrientation() {
   //Display Orientation: Landscape, not portrait nor square
   println (width, height, displayWidth, displayHeight);
   //Swap display key variables for testing
-  appWidth = width; //displayWidth
-  appHeight = height; //displayHeight
+  appWidth = displayWidth; //displayWidth
+  appHeight = displayHeight; //displayHeight
   //With Strings, easier to print to console or canvas
   String ls="Landscape or Square", p="portrait", DO="Display Orientation:", instruct="Bru, turn your phun";
   String orientation = ( appWidth >= appHeight ) ? ls : p ; //Ternary Operator, repeats IF-ELSE to populate var
