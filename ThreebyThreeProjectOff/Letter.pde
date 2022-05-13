@@ -60,7 +60,7 @@ void LetterSU() {
   rXP4 = ptX[1]; 
   rYP4 = ptY[1]; 
   rWP4 = rectWidth; 
-  rHP4 = rectHeight;
+  rHP4 = rectHeight*19/16;
   p4WAdjusted = rWP4 * iWRatioP4;
   p4HAdjusted = rHP4 * iHRatioP4;
   println (p4W, p4H);

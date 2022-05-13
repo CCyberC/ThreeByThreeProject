@@ -4,10 +4,12 @@ float iWRatioP1=0.0, iHRatioP1=0.0;
 Boolean wP1Larger=false, hP1Larger=false;
 int largerP1D, smallerP1D;
 float p1WAdjusted, p1HAdjusted;
+String BN = "BREAKING NEWS";
+String NR = "ESCAPED CONVICT: MURDERER ON THE RUN";
 //
 void NewsReportSU() {
-  int p1W = 1200;
-  int p1H = 580;
+  int p1W = 509;
+  int p1H = 285;
   if ( p1W >= p1H ) { //ID Larger Dimension: Landscape and Square
     largerP1D = p1W;
     smallerP1D = p1H;
@@ -26,7 +28,7 @@ void NewsReportSU() {
   rXP1 = ptX[3]; 
   rYP1 = ptY[3]; 
   rWP1 = rectWidth; 
-  rHP1 = rectHeight*3/2;
+  rHP1 = rectHeight*11/8;
   p1WAdjusted = rWP1 * iWRatioP1;
   p1HAdjusted = rHP1 * iHRatioP1;
   println (p1W, p1H);

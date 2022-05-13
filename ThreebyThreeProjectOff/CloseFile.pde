@@ -8,7 +8,7 @@ void CloseFileSetUp() {
   buttonX[3] = appWidth*(6.0/15.0); //Section 3; subsection 1, numerator is 11
   buttonY[3] = appHeight*(1.0/3.0)*(3.0/5.0); //Section 3; subsection 2, numerator is 13
   buttonWidth[3] = appWidth*(1.0/3.0)*(3.0/5.0); //widthDenominator count = 15 ... 1/15
-  buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0); //heightDenominator count = 15 ... 1/15
+  buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/8.0); //heightDenominator count = 15 ... 1/15
 }//End CloseFile
 //
 void CloseFileDraw() {
