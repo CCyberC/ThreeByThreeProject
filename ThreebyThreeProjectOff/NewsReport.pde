@@ -6,6 +6,11 @@ int largerP1D, smallerP1D;
 float p1WAdjusted, p1HAdjusted;
 String BN = "BREAKING NEWS";
 String NR = "ESCAPED CONVICT: MURDERER ON THE RUN";
+float NRX;
+float NRY;
+//
+NRX = ;
+NRY = ;
 //
 void NewsReportSU() {
   int p1W = 509;
@@ -56,10 +61,34 @@ void NewsReportmP() {
 }//End NewsReportmP
 //
 void NewsReportText() {
-  rect(buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
+  rect(buttonX[4], buttonY[4], buttonWidth[4], buttonHeight);
+  //rect(buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
   fill(grey);
   textAlign(CENTER, CENTER);
   textFont(npFont, 50);
-  text(NextPage, buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
+  text(NextPage, buttonX[4], buttonY[4], buttonWidth[4], buttonHeight);
+  //text(NextPage, buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
   fill(black);
 }//End NewsReportText
+//
+void BNText() {
+  rect(NRX, NRY, buttonWidth[7], buttonHeight);
+  //rect(NRX, NRY, buttonWidth[7], buttonHeight[7]);
+  fill(grey);
+  textAlign(CENTER, CENTER);
+  textFont(npFont, 50);
+  text(NR, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight);
+  //text(NR, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
+  fill(black);
+}//End BNText
+//
+void NRText() {
+  rect(NRX, NRY, buttonWidth[7], buttonHeight);
+  //rect(buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
+  fill(grey);
+  textAlign(CENTER, CENTER);
+  textFont(npFont, 50);
+  text(NR, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight);
+  //text(NR, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
+  fill(black);
+}//End NRText
