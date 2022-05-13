@@ -1,7 +1,7 @@
 void hoverOver() 
 {
   //HoverOver is yellow
-  if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
+  if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight) {
     fill(yellow);
     LetterText();
     //rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
@@ -11,7 +11,7 @@ void hoverOver()
     //rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
   } //Button 1
   //
-  if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2]) {
+  if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight) {
     fill(yellow);
     RestartFileText();
   } else {
@@ -19,7 +19,7 @@ void hoverOver()
     RestartFileText();
   } //Button 2
   //
-  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) {
+  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight) {
     fill(yellow);
     CloseFileText();
   } else {
@@ -27,7 +27,7 @@ void hoverOver()
     CloseFileText();
   } //Button 3
   //
-  if (mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight[4]) {
+  if (mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight) {
     fill(yellow);
     NewsReportText();
   } else {
@@ -35,7 +35,7 @@ void hoverOver()
     NewsReportText();
   } //Button 4
   //
-  if (mouseX>=buttonX[5] && mouseX<=buttonX[5]+buttonWidth[5] && mouseY>=buttonY[5] && mouseY<=buttonY[5]+buttonHeight[5]) {
+  if (mouseX>=buttonX[5] && mouseX<=buttonX[5]+buttonWidth[5] && mouseY>=buttonY[5] && mouseY<=buttonY[5]+buttonHeight) {
     fill(yellow);
     Evidence2Text();
   } else {
@@ -43,7 +43,7 @@ void hoverOver()
     Evidence2Text();
   } //Button 5
   //
-  if (mouseX>=buttonX[6] && mouseX<=buttonX[6]+buttonWidth[6] && mouseY>=buttonY[6] && mouseY<=buttonY[6]+buttonHeight[6]) {
+  if (mouseX>=buttonX[6] && mouseX<=buttonX[6]+buttonWidth[6] && mouseY>=buttonY[6] && mouseY<=buttonY[6]+buttonHeight) {
     fill(yellow);
     OFText();
   } else {
@@ -51,7 +51,7 @@ void hoverOver()
     OFText();
   } //Button 6
   //
-  if (mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight[7]) {
+  if (mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight) {
     fill(yellow);
     DiaryEntryText();
   } else {
@@ -59,7 +59,7 @@ void hoverOver()
     DiaryEntryText();
   } //Button 7
   //
-  if (mouseX>=buttonX[8] && mouseX<=buttonX[8]+buttonWidth[8] && mouseY>=buttonY[8] && mouseY<=buttonY[8]+buttonHeight[8]) {
+  if (mouseX>=buttonX[8] && mouseX<=buttonX[8]+buttonWidth[8] && mouseY>=buttonY[8] && mouseY<=buttonY[8]+buttonHeight) {
     fill(yellow);
     EvidenceText();
   } else {
@@ -67,7 +67,7 @@ void hoverOver()
     EvidenceText();
   } //Button 8
   //
-  if (mouseX>=buttonX[9] && mouseX<=buttonX[9]+buttonWidth[9] && mouseY>=buttonY[9] && mouseY<=buttonY[9]+buttonHeight[9]) {
+  if (mouseX>=buttonX[9] && mouseX<=buttonX[9]+buttonWidth[9] && mouseY>=buttonY[9] && mouseY<=buttonY[9]+buttonHeight) {
     fill(yellow);
     DiaryEntry3Text();
   } else {
@@ -75,7 +75,7 @@ void hoverOver()
     DiaryEntry3Text();
   } //Button 9
   //
-  if (mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10]) {
+  if (mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight) {
     fill(yellow);
     DiaryEntry2Text();
   } else {

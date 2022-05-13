@@ -5,7 +5,7 @@ void DiaryEntry3() {
 }//End DiaryEntry3
 //
 void DiaryEntry3mP() {
-  if (mouseX>=buttonX[9] && mouseX<=buttonX[9]+buttonWidth[9] && mouseY>=buttonY[9] && mouseY<=buttonY[9]+buttonHeight[9]) {
+  if (mouseX>=buttonX[9] && mouseX<=buttonX[9]+buttonWidth[9] && mouseY>=buttonY[9] && mouseY<=buttonY[9]+buttonHeight) {
     println("BTN 9 Activated");
     if (Evidence1==true) { //Button will turn On and Off
       Evidence1=false;
@@ -16,11 +16,11 @@ void DiaryEntry3mP() {
 }//End DiaryEntry3mP
 //
 void DiaryEntry3Text() {
-  rect(buttonX[9], buttonY[9], buttonWidth[9], buttonHeight[9]);
+  rect(buttonX[9], buttonY[9], buttonWidth[9], buttonHeight);
   fill(grey);
   textAlign(CENTER, CENTER);
   textFont(npFont, 50);
-  text(NextPage, buttonX[9], buttonY[9], buttonWidth[9], buttonHeight[9]);
+  text(NextPage, buttonX[9], buttonY[9], buttonWidth[9], buttonHeight);
   fill(black);
 }//End NewsReportText
 //

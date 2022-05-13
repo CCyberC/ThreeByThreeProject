@@ -8,7 +8,7 @@ void CloseFileSetUp() {
   buttonX[3] = appWidth*(6.0/15.0); //Section 3; subsection 1, numerator is 11
   buttonY[3] = appHeight*(1.0/3.0)*(3.0/5.0); //Section 3; subsection 2, numerator is 13
   buttonWidth[3] = appWidth*(1.0/3.0)*(3.0/5.0); //widthDenominator count = 15 ... 1/15
-  buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/8.0); //heightDenominator count = 15 ... 1/15
+  buttonHeight = appHeight*(1.0/3.0)*(1.0/8.0); //heightDenominator count = 15 ... 1/15
 }//End CloseFile
 //
 void CloseFileDraw() {
@@ -19,17 +19,17 @@ void CloseFilekeyPressed() {
 }//End CloseFilekeyPressed
 //
 void CloseFilemousePressed() {
-  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) exit();
+  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight) exit();
   {
     println("BTN 3 Activated");
   }
 }//End CloseFilemousePressed
 void CloseFileText() {
-  rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
+  rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight);
   fill(grey);
   textAlign(CENTER, CENTER);
   textFont(npFont, 50);
-  text(CF, buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
+  text(CF, buttonX[3], buttonY[3], buttonWidth[3], buttonHeight);
   fill(black);
 }//End CloseFileText
 //
@@ -42,7 +42,7 @@ void RestartFileDraw() {
 }//End RestartFileDraw
 //
 void RestartFilemousePressed() {
-  if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2]) {
+  if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight) {
     println("BTN 2 Activated");
     NewsReport=false; 
     DiaryEntry1=false; 
@@ -55,10 +55,10 @@ void RestartFilemousePressed() {
 }//End RestartFilemousePressed
 //
 void RestartFileText() {
-  rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
+  rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight);
   fill(grey);
   textAlign(CENTER, CENTER);
   textFont(npFont, 50);
-  text(RF, buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
+  text(RF, buttonX[2], buttonY[2], buttonWidth[2], buttonHeight);
   fill(black);
 }//End CloseFileText

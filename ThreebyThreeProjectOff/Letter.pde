@@ -10,7 +10,7 @@ void Letter() {
 }//End Letter
 //
 void LettermP() {
-  if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
+  if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight) {
     println("BTN 1 Activated");
     if (Letter==true) { //Button will turn On and Off
       Letter=false;
@@ -31,11 +31,11 @@ void LettermP() {
 }//End DiaryEntry3mP
 //
 void LetterText() {
-  rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
+  rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight);
   fill(grey);
   textAlign(CENTER, CENTER);
   textFont(npFont, 50);
-  text(NextPage, buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
+  text(NextPage, buttonX[1], buttonY[1], buttonWidth[1], buttonHeight);
   fill(resetWhite);
 }//End NewsReportText
 //

@@ -37,7 +37,7 @@ void DiaryEntryDraw() {
 }//End NewsReportDraw
 //
 void DiaryEntry1mP() {
-  if (mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight[7]) {
+  if (mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight) {
     println("BTN 7 Activated");
     if (DiaryEntry2==true) { //Button will turn On and Off
       DiaryEntry2=false;
@@ -48,11 +48,11 @@ void DiaryEntry1mP() {
 }//End DiaryEntry1mP
 //
 void DiaryEntryText() {
-  rect(buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
+  rect(buttonX[7], buttonY[7], buttonWidth[7], buttonHeight);
   fill(grey);
   textAlign(CENTER, CENTER);
   textFont(npFont, 50);
-  text(NextPage, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
+  text(NextPage, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight);
   fill(black);
 }//End NewsReportText
 //
@@ -61,6 +61,6 @@ void DE1() {
   fill(grey);
   textAlign(CENTER, CENTER);
   textFont(dEFont, 20);
-  text(DD, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
+  text(DD, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight);
   fill(black);
 }//End DE1

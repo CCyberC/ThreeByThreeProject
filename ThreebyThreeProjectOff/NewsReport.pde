@@ -9,8 +9,8 @@ String NR = "ESCAPED CONVICT: MURDERER ON THE RUN";
 float NRX;
 float NRY;
 //
-NRX = ;
-NRY = ;
+//NRX = ;
+//NRY = ;
 //
 void NewsReportSU() {
   int p1W = 509;
@@ -50,7 +50,7 @@ void NewsReportDraw() {
 }//End NewsReportDraw
 //
 void NewsReportmP() {
-  if (mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight[4]) {
+  if (mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight) {
     println("BTN 4 Activated");
     if (DiaryEntry1==true) { //Button will turn On and Off
       DiaryEntry1=false;
