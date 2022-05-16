@@ -65,6 +65,7 @@ void draw() {
   //Evidence2Draw();
   LetterDraw();
   //
+  DE1();
   //Starting pts for rect() must be 1-9 & filled black
   /*
   fill(black);

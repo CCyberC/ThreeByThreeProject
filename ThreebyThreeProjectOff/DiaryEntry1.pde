@@ -63,6 +63,13 @@ void DE1() {
   fill(black);
 }//End DE1
 //
+/*
 void DearDiary1() {
-  
+  rect();
+  fill();
+  textAlign(CENTER, CENTER);
+  textFont(dEFont, 20);
+  text(DD, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight);
+  fill(black);
 }//End DearDiary1
+*/
