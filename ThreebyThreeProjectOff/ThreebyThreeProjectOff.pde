@@ -55,12 +55,12 @@ void draw() {
   rect(ptX[10], ptY[10], rectWidth, rectHeight);
   rect(ptX[11], ptY[11], rectWidth, rectHeight);
   //
+  BNText();
+  NRText();
+  //
   hoverOver();
   //
   NewsReportDraw();
-  DiaryEntryDraw();
-  DiaryEntry2Draw();
-  DiaryEntry3Draw();
   EvidenceDraw();
   //Evidence2Draw();
   LetterDraw();

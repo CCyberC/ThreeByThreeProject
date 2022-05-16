@@ -6,8 +6,7 @@ int largerP1D, smallerP1D;
 float p1WAdjusted, p1HAdjusted;
 String BN = "BREAKING NEWS";
 String NR = "ESCAPED CONVICT: MURDERER ON THE RUN";
-float NRX;
-float NRY;
+float NRX, NRY, BNX, BNY;
 //
 //NRX = ;
 //NRY = ;
@@ -15,6 +14,10 @@ float NRY;
 void NewsReportSU() {
   int p1W = 509;
   int p1H = 285;
+  NRX = ptX[3]+(rectWidth*1/3);
+  NRY = appHeight*(6.0/24.0);
+  BNX = ptX[3];
+  BNY = appHeight*(6.0/24.0);
   if ( p1W >= p1H ) { //ID Larger Dimension: Landscape and Square
     largerP1D = p1W;
     smallerP1D = p1H;
@@ -72,23 +75,23 @@ void NewsReportText() {
 }//End NewsReportText
 //
 void BNText() {
-  rect(NRX, NRY, buttonWidth[7], buttonHeight);
+  rect(BNX, BNY, rectWidth*1/3, buttonHeight);
   //rect(NRX, NRY, buttonWidth[7], buttonHeight[7]);
   fill(grey);
   textAlign(CENTER, CENTER);
-  textFont(npFont, 50);
-  text(NR, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight);
+  textFont(npFont, 20);
+  text(BN, BNX, BNY, rectWidth*1/3, buttonHeight);
   //text(NR, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
   fill(black);
 }//End BNText
 //
 void NRText() {
-  rect(NRX, NRY, buttonWidth[7], buttonHeight);
+  rect(NRX, NRY, rectWidth*2/3, buttonHeight);
   //rect(buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
   fill(grey);
   textAlign(CENTER, CENTER);
-  textFont(npFont, 50);
-  text(NR, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight);
+  textFont(npFont, 20);
+  text(NR, NRX, NRY, rectWidth*2/3, buttonHeight);
   //text(NR, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
   fill(black);
 }//End NRText

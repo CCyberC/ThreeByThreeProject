@@ -1,4 +1,4 @@
-
+float DD1X, DD1Y;
 //
 void DiaryEntry1() {
   
@@ -7,6 +7,8 @@ void DiaryEntry1() {
 void DiaryEntrySU() {
   int p2W = 720;
   int p2H = 576;
+  DD1X = buttonX[6];
+  DD1Y = appHeight*(9.0/24.0);
   if ( p2W >= p2H ) { //ID Larger Dimension: Landscape and Square
     largerP2D = p2W;
     smallerP2D = p2H;
@@ -31,10 +33,6 @@ void DiaryEntrySU() {
   println (p2W, p2H);
   println (p2WAdjusted, p2HAdjusted);  
 }//End NewsReport
-//
-void DiaryEntryDraw() {
-  image(p2, rXP2, rYP2, p2WAdjusted, p2HAdjusted);
-}//End NewsReportDraw
 //
 void DiaryEntry1mP() {
   if (mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight) {
@@ -64,3 +62,7 @@ void DE1() {
   text(DD, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight);
   fill(black);
 }//End DE1
+//
+void DearDiary1() {
+  
+}//End DearDiary1

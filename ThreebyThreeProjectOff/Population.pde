@@ -83,7 +83,6 @@ void Population()
    rect(ptX[3], ptY[3], rectWidth, rectHeight*2);
    */
   //
-  p2 = loadImage("blank-journal-graphic-powerpoint.jpg");
   p3 = loadImage("800px_COLOURBOX7561229.jpg");
   p4 = loadImage("3693386.jpg");
   //

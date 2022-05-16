@@ -1,4 +1,5 @@
 float rXP23, rYP23;
+float DD3X, DD3Y;
 //
 void DiaryEntry3() {
   
@@ -27,6 +28,8 @@ void DiaryEntry3Text() {
 void DiaryEntry3SU() {
   int p2W = 536;
   int p2H = 360;
+  DD3X = buttonX[9];
+  DD3Y = appHeight*(17.0/24.0);
   if ( p2W >= p2H ) { //ID Larger Dimension: Landscape and Square
     largerP2D = p2W;
     smallerP2D = p2H;
@@ -52,6 +55,3 @@ void DiaryEntry3SU() {
   println (p2WAdjusted, p2HAdjusted);
 }//End DiaryEntry2SU
 //
-void DiaryEntry3Draw() {
-  image(p2, rXP2, rYP2, p2WAdjusted, p2HAdjusted);
-}//End DiaryEntry2Draw
